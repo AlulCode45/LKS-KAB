@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div className="navbar navbar-expand-lg bg-primary ">
+        <div className="container">
+            <div className="navbar-brand text-white fw-bolder">Vaccination Platform</div>
+            <button className="navbar-toggler">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="navbar-collapse collapse">
+                <nav className="navbar-nav ms-auto">
+                    <li className="nav-item">
+                        <a href="#" className="nav-link text-white">Login</a>
+                    </li>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div className="container vh-100 d-flex align-items-center justify-content-center">
+        <div className="card w-50">
+            <div className="card-header">
+                Login Aplikasi
+            </div>
+            <div className="card-body">
+                <form action="" method="post">
+                    <div className="form-group">
+                        <label for="">ID CARD NUMBER</label>
+                        <input type="text" id="id_card" className="form-control">
+                    </div>
+                    <div className="form-group">
+                        <label for="">Password</label>
+                        <input type="password" id="password" className="form-control">
+                    </div>
+                    <div className="d-flex justify-content-end">
+                        <button type="submit" className="btn btn-primary mt-3">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

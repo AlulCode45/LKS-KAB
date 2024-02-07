@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+.wrap {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.container {
+    width: 960px;
+    height: 600px;
+    display: grid;
+    place-content: center;
+}
+
+.card {
+    padding: 50px;
+    color: white;
+    background-color: rgb(28, 42, 46);
+    border-radius: 10px;
+}
+
+ol {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+li {
+    margin-top: 10px;
+}
+
+input#username {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+#play {
+    background-color: red;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bolder;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: not-allowed;
+}

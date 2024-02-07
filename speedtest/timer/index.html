@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Stopwatch</title>
+
+    <style>
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('2022_Acer_Consumer_Option_03_3840x2400.jpg');
+            background-size: cover;
+            color: white;
+            overflow: hidden;
+        }
+
+        * {
+            font-family: sans-serif;
+        }
+
+        .wrap {
+            display: grid;
+            place-content: center;
+            height: 100vh;
+        }
+
+        .timer {
+            display: flex;
+            gap: 10px;
+            font-size: 80px;
+            line-height: 0;
+        }
+
+        .button-action {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            outline: none;
+            border: none;
+            font-weight: bolder;
+            border-radius: 5px;
+        }
+
+        #start {
+            color: white;
+            background-color: green;
+        }
+
+        #stop {
+            color: white;
+            background-color: red;
+        }
+
+        #reset {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="timer">
+            <h1 id="sec">000</h1>
+            <h1 id="">:</h1>
+            <h1 id="milsec">00</h1>
+        </div>
+        <div class="button-action">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

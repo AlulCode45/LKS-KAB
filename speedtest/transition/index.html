@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        .wrap {
+            display: grid;
+            place-content: center;
+            height: 100vh;
+        }
+
+        .image-box {
+            background: url('2022_Acer_Consumer_Option_01_3840x2400.jpg');
+            background-size: 100% 100%;
+            width: 800px;
+            height: 600px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        .box {
+            width: 100%;
+            height: 100%;
+            border: 2px solid white;
+        }
+
+        @keyframes hidden {
+            from {
+                background-color: transparent;
+            }
+
+            to {
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="image-box">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

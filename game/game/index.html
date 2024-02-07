@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="start-game">
+        <h1 id="countdown">3</h1>
+    </div>
+    <div class="pause-game">
+        <div class="pause-content">
+            <h1>Paused</h1>
+            <div class="pause-action">
+                <button id="continue">Continue</button>
+                <a href="/game/index.html">Restart</a>
+            </div>
+        </div>
+    </div>
+    <div class="game-over">
+        <h1>Game Over</h1>
+        <b id="end-time">Time : 00:00</b>
+        <b id="end-score">Score : 0</b>
+        <b id="end-fail">Fail : 0</b>
+        <b id="end-player">Player : -</b>
+
+        <a href="/game/index.html" id="restart">Restart</a>
+    </div>
+
+    <div class="wrap">
+        <div class="game-info">
+            <h1 id="time">Time : 00:00</h1>
+            <h1 id="score">Score : 0</h1>
+            <h1 id="fail">Fail : 0</h1>
+            <h1 id="player">Player : -</h1>
+        </div>
+        <div class="container">
+            <canvas></canvas>
+        </div>
+        <div class="game-action">
+            <h1>Virus Slayer</h1>
+            <a href="/game/index.html">Restart</a>
+            <a href="/">Quit</a>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

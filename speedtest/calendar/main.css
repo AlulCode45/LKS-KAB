@@ -1,0 +1,94 @@
+* {
+    font-family: sans-serif;
+    line-height: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.wrap {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.calendar {
+    width: 700px;
+    /* height: 500px; */
+    border: 1px solid black;
+}
+
+.calendar-header {
+    width: 100%;
+    height: 150px;
+    background-color: pink;
+    padding: 10px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    font-weight: bolder;
+}
+
+.header-left a {
+    margin-left: 20px;
+}
+
+.header-right a {
+    margin-right: 20px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    font-weight: bolder;
+    justify-content: end;
+}
+
+.header-center {
+    width: 40%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-center b {
+    display: block;
+}
+
+.header-center h1 {
+    line-height: 20px;
+}
+
+.header-right {
+    width: 30%;
+}
+
+.calendar-body {
+    padding: 25px;
+}
+
+.row {
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.col {
+    width: 100%;
+    padding: 20px;
+}
+
+.today {
+    background: pink;
+    color: red;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div className="navbar navbar-expand-lg bg-primary ">
+        <div className="container">
+            <div className="navbar-brand text-white fw-bolder">Vaccination Platform</div>
+            <button className="navbar-toggler">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="navbar-collapse collapse">
+                <nav className="navbar-nav ms-auto">
+                    <li className="nav-item">
+                        <a href="#" className="nav-link text-white">Muhammad Khoyron Ahlaqul Firdaus</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="#" className="nav-link text-white">Logout</a>
+                    </li>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <main className="container mt-5 mb-5">
+        <h1>Request Consultation</h1>
+        <div className="d-flex gap-1 mt-5">
+            Do you have disease history now?
+            <select name="" id="">
+                <option value="">Yes, I have</option>
+                <option value="">No, not have</option>
+            </select>
+        </div>
+        <textarea name="" id="" cols="50" rows="10" placeholder="Describe your disease history"
+            className="form-control mt-2"></textarea>
+
+
+        <div className="d-flex gap-1 mt-5">
+            Do you have symptoms now?
+            <select name="" id="">
+                <option value="">Yes, I have</option>
+                <option value="">No, not have</option>
+            </select>
+        </div>
+        <textarea name="" id="" cols="50" rows="10" placeholder="Describe your symptoms"
+            className="form-control mt-2"></textarea>
+        <button className="btn btn-primary mt-2">Send Request</button>
+    </main>
+
+</body>
+
+</html>

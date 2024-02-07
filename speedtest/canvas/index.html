@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <style>
+        .wrap {
+            display: grid;
+            height: 100vh;
+            place-content: center;
+        }
+
+        canvas {
+            width: 400px;
+            height: 320px;
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <canvas></canvas>
+    </div>
+
+    <script>
+
+        const canvas = document.querySelector('canvas')
+        const ctx = canvas.getContext('2d')
+
+        canvas.width = canvas.scrollWidth
+        canvas.height = canvas.scrollHeight
+
+        ballRadius = 30
+        ballX = -ballRadius
+        ballY = canvas.height / 2 - ballRadius / 2
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height)
+            ctx.beginPath()
+            ctx.fillStyle = 'white'
+            ctx.arc(ballX += 3, ballY, ballRadius, 0, Math.PI * 2)
+            ctx.fill()
+
+            if (ballX > canvas.width + ballRadius) {
+                ballX = -ballRadius
+            }
+            requestAnimationFrame(animate)
+        }
+        animate()
+    </script>
+</body>
+
+</html>
